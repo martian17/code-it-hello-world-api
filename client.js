@@ -78,6 +78,8 @@ const res = await fetch("http://localhost:3030/hello-world").then(v=>v.json());
 const bfcode = decodeFourierBuffer(res).map(v=>String.fromCharCode(v)).join("");
 
 
-console.log("raw response: ",res);
-console.log("IFFT=>round=>stringify: ", bfcode);
-console.log("Final result: ",evalBrainfuck(bfcode));
+console.log("\x1b[1mRaw response (Frequency domain)\x1b[0m\n",res);
+console.log("");
+console.log("\x1b[1mIFFT=>round=>stringify\x1b[0m\n", bfcode);
+console.log("");
+console.log("\x1b[1mFinal result\x1b[0m\n",evalBrainfuck(bfcode));
