@@ -1,11 +1,11 @@
 # Code-it hello world API
 The most overcomplicated hello world API  
   
-The server first converts the hello world string to brainfuck, then it maps the bytes into a Float32Array to perform Fourier Transform to generate a frequency domain of the input, and returns the output through "/hello-world" endpoint with JSON format.  
-The client then decode the received response like peeling the onion skin.
+The server first converts the hello world string to [brainfuck](https://en.wikipedia.org/wiki/Brainfuck), then it maps the bytes into a `Float32Array` to perform [Fast Fourier Transform](https://en.wikipedia.org/wiki/Fast_Fourier_transform) to generate a frequency domain of the input, and returns the output through "/hello-world" endpoint with JSON format.  
+The client then decodes the received response like peeling back the onion skin.
 
 ## Example client.js output
-### Raw response (Frequenct domain)
+### Raw response (Frequency domain)
 ```js
 [
                 21411,                   0,    5615.37060546875,
